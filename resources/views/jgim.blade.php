@@ -82,27 +82,41 @@
 
 
         <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio section">
+        <section id="about us" class="about us section">
 
             <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Portfolio</h2>
-                <p>Necessitatibus eius consequatur</p>
+            <div class="container section-title " data-aos="fade-up">
+                <h2>About Us</h2>
+                <p>Jakarta Investment Model</p>
             </div><!-- End Section Title -->
-            <div class="container">
-                <div class="slider-section">
+            <div class="content-us">
+                <div class="container pt-3 pb-5">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugiat fuga molestias atque facilis accusamus Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, accusantium. Asperiores harum sequi fugiat officiis.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <img src="assets/img/hero-carousel/image_jkt_1.jpg" alt="" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="container section-title" data-aos="fade-up">
+                <h2>About Us</h2>
+                <p>Jakarta Investment Model</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+                <div class="slider-section" data-aos="fade-up">
                     <div class="slider-wrapper" id="sliderWrapper">
                         <!-- Cards dirender oleh JS -->
                     </div>
-
                     <div class="slider-dots" id="sliderDots"></div>
-
                 </div>
             </div>
 
         </section><!-- /Portfolio Section -->
-
     </main>
 
 
