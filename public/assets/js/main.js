@@ -1,10 +1,36 @@
-/**
- * Template Name: Sailor
- * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
- * Updated: Aug 07 2024 with Bootstrap v5.3.3
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
+// *** iframe ******
+
+function openMap() {
+    document.body.classList.add("map-open");
+
+    mapFrame.src =
+        "https://pelayanan.jakarta.go.id/kemudahan-berusaha/invest.html";
+
+    mapWrapper.style.display = "block";
+
+    // trigger animation
+    requestAnimationFrame(() => {
+        mapWrapper.classList.add("active");
+    });
+}
+
+function closeMap() {
+    mapWrapper.classList.remove("active");
+
+    setTimeout(() => {
+        mapWrapper.style.display = "none";
+        mapFrame.src = ""; // stop iframe
+        document.body.classList.remove("map-open");
+    }, 300);
+}
+
+/* ESC to close */
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && mapWrapper.classList.contains("active")) {
+        closeMap();
+    }
+});
+//**** */ end iframe******
 
 (function () {
     "use strict";
