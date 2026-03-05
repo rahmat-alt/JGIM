@@ -186,7 +186,7 @@
             <!-- Section Title -->
             <div class="container section-title " data-aos="fade-up">
                 <h2>About Us</h2>
-                <p>Jakarta Investment Model</p>
+                <p>Jakarta Geospatial Investment Model</p>
             </div><!-- End Section Title -->
             <div class="content-us">
                 <div class="container pt-3 pb-5">
@@ -202,8 +202,8 @@
             </div>
 
             <div class="container section-title" data-aos="fade-up">
-                <h2>About Us</h2>
-                <p>Jakarta Investment Model</p>
+                <h2>Feature Of</h2>
+                <p>Jakarta Geospatial Investment Model</p>
             </div><!-- End Section Title -->
 
             <div class="container">

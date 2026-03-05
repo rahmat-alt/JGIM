@@ -483,9 +483,10 @@ section,
 
 .section-title h2::after {
     content: "";
-    width: 120px;
-    height: 1px;
     display: inline-block;
+    width: 40%;
+    max-width: 350px;
+    height: 1px;
     background: var(--accent-color);
     margin: 4px 10px;
 }
