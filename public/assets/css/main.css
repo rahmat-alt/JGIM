@@ -1013,6 +1013,9 @@ section,
     .slide-card.active .card-label p {
         max-height: 80px;
     }
+    .section-title p {
+        font-size: 20px;
+    }
 }
 
 /* ── Desktop: 1200px – 1399px ── */
