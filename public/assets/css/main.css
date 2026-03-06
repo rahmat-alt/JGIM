@@ -583,7 +583,7 @@ section,
     }
 }
 
-.hero .btn-get-started {
+.hero .btn_carousel {
     color: var(--contrast-color);
     background: var(--accent-color);
     font-family: var(--heading-font);
@@ -598,7 +598,7 @@ section,
     animation: fadeInUp 1s both 0.4s;
 }
 
-.hero .btn-get-started:hover {
+.hero .btn_carousel:hover {
     background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -830,7 +830,7 @@ section,
         max-width: 100%;
     }
 
-    .hero .btn-get-started {
+    .hero .btn_carousel {
         font-size: 9px;
         padding: 6px 18px;
         margin: 6px;
@@ -912,7 +912,7 @@ section,
         max-width: 100%;
     }
 
-    .hero .btn-get-started {
+    .hero .btn_carousel {
         font-size: 10px;
         padding: 7px 22px;
     }

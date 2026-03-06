@@ -10,4 +10,9 @@ class JgimController extends Controller
     {
         return view('jgim');
     }
+
+    public function gotoslide()
+    {
+        return view('maps-jgim');
+    }
 }

@@ -8,3 +8,4 @@ Route::get('/', function () {
 });
 
 Route::get('/jgim', [JgimController::class, 'index']);
+Route::get('/maps-jgim', [JgimController::class, 'gotoslide']);
