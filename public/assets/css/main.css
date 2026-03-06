@@ -401,9 +401,13 @@ h6 {
 /* button feature */
 .menu-container {
     position: relative;
-    display: inline-flex;
-    padding: 7px;
-    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #f3f3f3;
+    padding: 6px;
+    border-radius: 12px;
+    gap: 5px;
 }
 
 .menu-container button {
@@ -411,20 +415,18 @@ h6 {
     z-index: 2;
     border: none;
     background: none;
-    padding: 8px 20px;
+    padding: 10px 20px;
     font-weight: 500;
-    font-family: var(--heading-font);
-    color: var(--heading-color);
+    color: #4a5d73;
 }
 
 .slider {
     position: absolute;
-    top: 5px;
-    left: 5px;
-    height: calc(100% - 10px);
-    width: 70px;
-    background: var(--accent-color);
-    border-radius: 8px;
+    top: 6px;
+    left: 6px;
+    height: calc(100% - 12px);
+    background: #ff8c00;
+    border-radius: 10px;
     transition: all 0.35s ease;
     z-index: 1;
 }
@@ -982,6 +984,26 @@ section,
     .section-title p {
         font-size: 15px;
     }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .menu-container button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .slider {
+        display: none; /* slider dimatikan di mobile agar rapi */
+    }
+
+    .menu-container button.active {
+        background: #ff8c00;
+        border-radius: 10px;
+        color: white;
+    }
 }
 
 /* ── Mobile: 576px – 767px ── */
@@ -1052,255 +1074,255 @@ section,
     .slide-card.active .card-label p {
         max-height: 70px;
     }
-}
 
-/* ── Tablet: 768px – 1199px ── */
-@media (min-width: 768px) and (max-width: 1199px) {
-    /* Hero */
-    .hero .carousel-container {
-        inset: 90px 40px 40px 40px;
+    /* ── Tablet: 768px – 1199px ── */
+    @media (min-width: 768px) and (max-width: 1199px) {
+        /* Hero */
+        .hero .carousel-container {
+            inset: 90px 40px 40px 40px;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            max-width: 80%;
+        }
+
+        .hero p {
+            font-size: 13px;
+            max-width: 80%;
+        }
+
+        .navmenu {
+            display: none;
+        }
+
+        /* Slider card */
+        .slider-wrapper {
+            gap: 16px;
+            padding: 26px 16px;
+        }
+
+        .slide-card.side {
+            width: 200px;
+            height: 190px;
+        }
+
+        .slide-card.active {
+            width: 300px;
+            height: 260px;
+        }
+
+        .card-label h3 {
+            font-size: 15px;
+        }
+
+        .slide-card.active .card-label h3 {
+            font-size: 18px;
+        }
+
+        .card-label p {
+            font-size: 12px;
+        }
+
+        .slide-card.active .card-label p {
+            max-height: 80px;
+        }
+        .section-title p {
+            font-size: 20px;
+        }
     }
 
-    .hero h2 {
-        font-size: 28px;
-        max-width: 80%;
+    /* ── Desktop: 1200px – 1399px ── */
+    @media (min-width: 1200px) and (max-width: 1399px) {
+        /* Hero */
+        .hero .carousel-container {
+            inset: 90px 64px 64px 64px;
+        }
+
+        .hero h2 {
+            font-size: 56px;
+            max-width: 70%;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 70%;
+        }
+
+        /* Slider card */
+        .slide-card.side {
+            width: 280px;
+            height: 220px;
+        }
+
+        .slide-card.active {
+            width: 380px;
+            height: 290px;
+        }
+
+        .card-label h3 {
+            font-size: 18px;
+        }
+
+        .slide-card.active .card-label h3 {
+            font-size: 22px;
+        }
+
+        .card-label p {
+            font-size: 13px;
+        }
     }
 
-    .hero p {
-        font-size: 13px;
-        max-width: 80%;
+    /* ── Layar Besar: 1400px – 1919px ── */
+    @media (min-width: 1400px) and (max-width: 1919px) {
+        /* Hero */
+        .hero .carousel-container {
+            inset: 90px 40px 40px 40px;
+        }
+
+        .hero h2 {
+            font-size: 52px;
+            max-width: 65%;
+        }
+
+        .hero p {
+            font-size: 17px;
+            max-width: 65%;
+        }
+
+        /* Slider card */
+        .slider-wrapper {
+            gap: 24px;
+        }
+
+        .slide-card.side {
+            width: 340px;
+            height: 260px;
+        }
+
+        .slide-card.active {
+            width: 460px;
+            height: 340px;
+        }
+
+        .card-label h3 {
+            font-size: 20px;
+        }
+
+        .slide-card.active .card-label h3 {
+            font-size: 26px;
+        }
+
+        .card-label p {
+            font-size: 14px;
+        }
+
+        .slide-card.active .card-label p {
+            max-height: 120px;
+        }
     }
 
-    .navmenu {
-        display: none;
+    /* ── Full HD / 2K: 1920px – 2559px ── */
+    @media (min-width: 1920px) and (max-width: 2559px) {
+        /* Hero */
+        .hero h2 {
+            font-size: 56px;
+            max-width: 60%;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 60%;
+        }
+
+        /* Slider card */
+        .slider-wrapper {
+            gap: 32px;
+        }
+
+        .slide-card.side {
+            width: 420px;
+            height: 320px;
+        }
+
+        .slide-card.active {
+            width: 580px;
+            height: 420px;
+        }
+
+        .card-label {
+            padding: 28px 28px 24px;
+        }
+
+        .card-label h3 {
+            font-size: 24px;
+        }
+
+        .slide-card.active .card-label h3 {
+            font-size: 32px;
+        }
+
+        .card-label p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .slide-card.active .card-label p {
+            max-height: 150px;
+        }
     }
 
-    /* Slider card */
-    .slider-wrapper {
-        gap: 16px;
-        padding: 26px 16px;
-    }
+    /* ── Ultrawide / 4K: 2560px ke atas ── */
+    @media (min-width: 2560px) {
+        /* Hero */
+        .hero .carousel {
+            min-height: 900px;
+        }
 
-    .slide-card.side {
-        width: 200px;
-        height: 190px;
-    }
+        .hero h2 {
+            font-size: 64px;
+            max-width: 50%;
+        }
 
-    .slide-card.active {
-        width: 300px;
-        height: 260px;
-    }
+        .hero p {
+            font-size: 20px;
+            max-width: 50%;
+        }
 
-    .card-label h3 {
-        font-size: 15px;
-    }
+        /* Slider card */
+        .slider-wrapper {
+            gap: 40px;
+        }
 
-    .slide-card.active .card-label h3 {
-        font-size: 18px;
-    }
+        .slide-card.side {
+            width: 500px;
+            height: 380px;
+        }
 
-    .card-label p {
-        font-size: 12px;
-    }
+        .slide-card.active {
+            width: 680px;
+            height: 500px;
+        }
 
-    .slide-card.active .card-label p {
-        max-height: 80px;
-    }
-    .section-title p {
-        font-size: 20px;
-    }
-}
+        .card-label {
+            padding: 32px 32px 28px;
+        }
 
-/* ── Desktop: 1200px – 1399px ── */
-@media (min-width: 1200px) and (max-width: 1399px) {
-    /* Hero */
-    .hero .carousel-container {
-        inset: 90px 64px 64px 64px;
-    }
+        .card-label h3 {
+            font-size: 28px;
+        }
 
-    .hero h2 {
-        font-size: 56px;
-        max-width: 70%;
-    }
+        .slide-card.active .card-label h3 {
+            font-size: 38px;
+        }
 
-    .hero p {
-        font-size: 20px;
-        max-width: 70%;
-    }
+        .card-label p {
+            font-size: 18px;
+            line-height: 1.65;
+        }
 
-    /* Slider card */
-    .slide-card.side {
-        width: 280px;
-        height: 220px;
-    }
-
-    .slide-card.active {
-        width: 380px;
-        height: 290px;
-    }
-
-    .card-label h3 {
-        font-size: 18px;
-    }
-
-    .slide-card.active .card-label h3 {
-        font-size: 22px;
-    }
-
-    .card-label p {
-        font-size: 13px;
-    }
-}
-
-/* ── Layar Besar: 1400px – 1919px ── */
-@media (min-width: 1400px) and (max-width: 1919px) {
-    /* Hero */
-    .hero .carousel-container {
-        inset: 90px 40px 40px 40px;
-    }
-
-    .hero h2 {
-        font-size: 52px;
-        max-width: 65%;
-    }
-
-    .hero p {
-        font-size: 17px;
-        max-width: 65%;
-    }
-
-    /* Slider card */
-    .slider-wrapper {
-        gap: 24px;
-    }
-
-    .slide-card.side {
-        width: 340px;
-        height: 260px;
-    }
-
-    .slide-card.active {
-        width: 460px;
-        height: 340px;
-    }
-
-    .card-label h3 {
-        font-size: 20px;
-    }
-
-    .slide-card.active .card-label h3 {
-        font-size: 26px;
-    }
-
-    .card-label p {
-        font-size: 14px;
-    }
-
-    .slide-card.active .card-label p {
-        max-height: 120px;
-    }
-}
-
-/* ── Full HD / 2K: 1920px – 2559px ── */
-@media (min-width: 1920px) and (max-width: 2559px) {
-    /* Hero */
-    .hero h2 {
-        font-size: 56px;
-        max-width: 60%;
-    }
-
-    .hero p {
-        font-size: 18px;
-        max-width: 60%;
-    }
-
-    /* Slider card */
-    .slider-wrapper {
-        gap: 32px;
-    }
-
-    .slide-card.side {
-        width: 420px;
-        height: 320px;
-    }
-
-    .slide-card.active {
-        width: 580px;
-        height: 420px;
-    }
-
-    .card-label {
-        padding: 28px 28px 24px;
-    }
-
-    .card-label h3 {
-        font-size: 24px;
-    }
-
-    .slide-card.active .card-label h3 {
-        font-size: 32px;
-    }
-
-    .card-label p {
-        font-size: 16px;
-        line-height: 1.6;
-    }
-
-    .slide-card.active .card-label p {
-        max-height: 150px;
-    }
-}
-
-/* ── Ultrawide / 4K: 2560px ke atas ── */
-@media (min-width: 2560px) {
-    /* Hero */
-    .hero .carousel {
-        min-height: 900px;
-    }
-
-    .hero h2 {
-        font-size: 64px;
-        max-width: 50%;
-    }
-
-    .hero p {
-        font-size: 20px;
-        max-width: 50%;
-    }
-
-    /* Slider card */
-    .slider-wrapper {
-        gap: 40px;
-    }
-
-    .slide-card.side {
-        width: 500px;
-        height: 380px;
-    }
-
-    .slide-card.active {
-        width: 680px;
-        height: 500px;
-    }
-
-    .card-label {
-        padding: 32px 32px 28px;
-    }
-
-    .card-label h3 {
-        font-size: 28px;
-    }
-
-    .slide-card.active .card-label h3 {
-        font-size: 38px;
-    }
-
-    .card-label p {
-        font-size: 18px;
-        line-height: 1.65;
-    }
-
-    .slide-card.active .card-label p {
-        max-height: 180px;
+        .slide-card.active .card-label p {
+            max-height: 180px;
+        }
     }
 }
