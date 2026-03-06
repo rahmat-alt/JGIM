@@ -255,7 +255,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Pastikan elemen sudah dirender untuk dapat offsetHeight
         requestAnimationFrame(() => {
-            const peekHeight = h3.offsetHeight + 100; // tinggi judul + padding bawah
+            const peekHeight = h3.offsetHeight + 0; // tinggi judul + padding bawah
 
             // State default: judul mengintip
             label.style.transition = "none";
@@ -363,6 +363,23 @@ document.addEventListener("DOMContentLoaded", function () {
             );
         startX = null;
     });
+
+    const items = document.querySelectorAll(".menu-item");
+    const slider = document.getElementById("slider");
+
+    items.forEach((item) => {
+        item.addEventListener("click", function () {
+            const rect = this.getBoundingClientRect();
+            const parentRect = this.parentElement.getBoundingClientRect();
+
+            slider.style.width = rect.width + "px";
+            slider.style.left = rect.left - parentRect.left + "px";
+        });
+    });
+
+    window.onload = () => {
+        items[0].click();
+    };
 
     // Auto play
     setInterval(() => goTo((current + 1) % slides.length), 4000);

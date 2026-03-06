@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Index - Sailor Bootstrap Template</title>
+    <title>Jakarta Geospatial Investment Model</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -155,7 +155,7 @@
 
                         <div class="text-center mt-2">
                             <a href="/maps-jgim"
-                                class="btn btn-primary btn-maps rounded-pill px-2 py-1 fs-7"
+                                class="btn btn-primary btn-maps rounded px-2 py-1 fs-7"
                                 onclick="openMap()">
                                 Start Using Maps
                             </a>
@@ -172,7 +172,7 @@
 
                         <div class="text-center mt-2">
                             <a href="/maps-jgim"
-                                class="btn btn-primary btn-maps rounded-pill px-2 py-1 fs-7"
+                                class="btn btn-primary btn-maps rounded px-2 py-1 fs-7"
                                 onclick="openMap()">
                                 Start Using Maps
                             </a>
@@ -188,7 +188,7 @@
 
                         <div class="text-center mt-2">
                             <a href="/maps-jgim"
-                                class="btn btn-primary btn-maps rounded-pill px-2 py-1 fs-7"
+                                class="btn btn-primary btn-maps rounded px-2 py-1 fs-7"
                                 onclick="openMap()">
                                 Start Using Maps
                             </a>
@@ -223,20 +223,35 @@
                 </div>
             </div>
 
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Feature Of</h2>
-                <p>Jakarta Geospatial Investment Model</p>
-            </div><!-- End Section Title -->
+        </section><!-- /about us section -->
 
-            <div class="container">
-                <div class="slider-section" data-aos="fade-up">
-                    <div class="slider-wrapper" id="sliderWrapper">
-                        <!-- Cards dirender oleh JS -->
-                    </div>
-                    <div class="slider-dots" id="sliderDots"></div>
-                </div>
+
+        <!-- slider  section -->
+        <div class="container section-title" data-aos="fade-up">
+
+
+            <h2>Feature Of</h2>
+            <p>Jakarta Geospatial Investment Model</p>
+        </div><!-- End Section Title -->
+
+        <div class="container d-flex justify-content-center pt-4 pb-3">
+            <div class="menu-container" id="menu">
+                <div class="slider" id="slider"></div>
+                <button class="menu-item">Existing</button>
+                <button class="menu-item">Spatial Analysis</button>
+                <button class="menu-item">Development Plan</button>
             </div>
+        </div>
 
+        <div class="container pb-4">
+
+            <div class="slider-section" data-aos="fade-up">
+                <div class="slider-wrapper" id="sliderWrapper">
+                    <!-- Cards dirender oleh JS -->
+                </div>
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
         </section><!-- /slider section -->
     </main>
 
