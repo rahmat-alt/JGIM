@@ -583,7 +583,7 @@ section,
     }
 }
 
-.hero .btn_carousel {
+.hero .btn-get-started {
     color: var(--contrast-color);
     background: var(--accent-color);
     font-family: var(--heading-font);
@@ -598,7 +598,7 @@ section,
     animation: fadeInUp 1s both 0.4s;
 }
 
-.hero .btn_carousel:hover {
+.hero .btn-get-started:hover {
     background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -806,12 +806,23 @@ section,
     border-radius: 4px;
 }
 
+/* button maps carousel */
+.btn-maps {
+    padding: 6px 18px;
+    font-size: 13px;
+}
+
 /*--------------------------------------------------------------
 # Responsive Styles (320px – 2560px)
 --------------------------------------------------------------*/
 
 /* ── Mobile kecil: 320px – 575px ── */
 @media (max-width: 575px) {
+    .btn-maps {
+        padding: 4px 12px;
+        font-size: 11px;
+    }
+
     /* Hero */
     .hero .carousel-container {
         inset: 60px 20px 20px 20px;
@@ -828,12 +839,6 @@ section,
         line-height: 1.5;
         margin-bottom: 8px;
         max-width: 100%;
-    }
-
-    .hero .btn_carousel {
-        font-size: 9px;
-        padding: 6px 18px;
-        margin: 6px;
     }
 
     .carousel-indicators {
@@ -912,7 +917,7 @@ section,
         max-width: 100%;
     }
 
-    .hero .btn_carousel {
+    .hero .btn-get-started {
         font-size: 10px;
         padding: 7px 22px;
     }
