@@ -812,6 +812,62 @@ section,
     font-size: 13px;
 }
 
+/* swipper slider */
+.slide-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.slide-card .card-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2.5rem 1.5rem 1rem;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.92) 60%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    color: #fff;
+    /* transform & transition dikontrol JS */
+}
+
+.slide-card .card-label h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.slide-card .card-label p {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+/* Side card: sembunyikan total */
+.slide-card.side .card-label {
+    display: none;
+}
+
+/* Tampil hanya saat hover pada kartu ACTIVE */
+.slide-card.active:hover .card-label {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Opsional: kartu side tidak perlu hover label */
+.slide-card.side .card-label {
+    display: none;
+}
+
+.slide-card:hover .card-label {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* end swipper slider */
+
 /*--------------------------------------------------------------
 # Responsive Styles (320px – 2560px)
 --------------------------------------------------------------*/

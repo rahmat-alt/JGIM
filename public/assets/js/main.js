@@ -2,13 +2,9 @@
 
 function openMap() {
     document.body.classList.add("map-open");
-
     mapFrame.src =
         "https://pelayanan.jakarta.go.id/kemudahan-berusaha/invest.html";
-
     mapWrapper.style.display = "block";
-
-    // trigger animation
     requestAnimationFrame(() => {
         mapWrapper.classList.add("active");
     });
@@ -16,15 +12,13 @@ function openMap() {
 
 function closeMap() {
     mapWrapper.classList.remove("active");
-
     setTimeout(() => {
         mapWrapper.style.display = "none";
-        mapFrame.src = ""; // stop iframe
+        mapFrame.src = "";
         document.body.classList.remove("map-open");
     }, 300);
 }
 
-/* ESC to close */
 document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && mapWrapper.classList.contains("active")) {
         closeMap();
@@ -35,9 +29,6 @@ document.addEventListener("keydown", (e) => {
 (function () {
     "use strict";
 
-    /**
-     * Apply .scrolled class to the body as the page is scrolled down
-     */
     function toggleScrolled() {
         const selectBody = document.querySelector("body");
         const selectHeader = document.querySelector("#header");
@@ -55,9 +46,6 @@ document.addEventListener("keydown", (e) => {
     document.addEventListener("scroll", toggleScrolled);
     window.addEventListener("load", toggleScrolled);
 
-    /**
-     * Mobile nav toggle
-     */
     const mobileNavToggleBtn = document.querySelector(".mobile-nav-toggle");
 
     function mobileNavToogle() {
@@ -67,9 +55,6 @@ document.addEventListener("keydown", (e) => {
     }
     mobileNavToggleBtn.addEventListener("click", mobileNavToogle);
 
-    /**
-     * Hide mobile nav on same-page/hash links
-     */
     document.querySelectorAll("#navmenu a").forEach((navmenu) => {
         navmenu.addEventListener("click", () => {
             if (document.querySelector(".mobile-nav-active")) {
@@ -78,9 +63,6 @@ document.addEventListener("keydown", (e) => {
         });
     });
 
-    /**
-     * Toggle mobile nav dropdowns
-     */
     document
         .querySelectorAll(".navmenu .toggle-dropdown")
         .forEach((navmenu) => {
@@ -94,9 +76,6 @@ document.addEventListener("keydown", (e) => {
             });
         });
 
-    /**
-     * Scroll top button
-     */
     let scrollTop = document.querySelector(".scroll-top");
 
     function toggleScrollTop() {
@@ -108,18 +87,12 @@ document.addEventListener("keydown", (e) => {
     }
     scrollTop.addEventListener("click", (e) => {
         e.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
+        window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
     window.addEventListener("load", toggleScrollTop);
     document.addEventListener("scroll", toggleScrollTop);
 
-    /**
-     * Animation on scroll function and init
-     */
     function aosInit() {
         AOS.init({
             duration: 600,
@@ -130,9 +103,6 @@ document.addEventListener("keydown", (e) => {
     }
     window.addEventListener("load", aosInit);
 
-    /**
-     * Auto generate the carousel indicators
-     */
     document
         .querySelectorAll(".carousel-indicators")
         .forEach((carouselIndicator) => {
@@ -148,16 +118,8 @@ document.addEventListener("keydown", (e) => {
                 });
         });
 
-    /**
-     * Initiate glightbox
-     */
-    const glightbox = GLightbox({
-        selector: ".glightbox",
-    });
+    const glightbox = GLightbox({ selector: ".glightbox" });
 
-    /**
-     * Init isotope layout and filters
-     */
     document
         .querySelectorAll(".isotope-layout")
         .forEach(function (isotopeItem) {
@@ -197,23 +159,15 @@ document.addEventListener("keydown", (e) => {
                             initIsotope.arrange({
                                 filter: this.getAttribute("data-filter"),
                             });
-                            if (typeof aosInit === "function") {
-                                aosInit();
-                            }
+                            if (typeof aosInit === "function") aosInit();
                         },
                         false,
                     );
                 });
         });
 
-    /**
-     * Initiate Pure Counter
-     */
     new PureCounter();
 
-    /**
-     * Animate the skills items on reveal
-     */
     let skillsAnimation = document.querySelectorAll(".skills-animation");
     skillsAnimation.forEach((item) => {
         new Waypoint({
@@ -228,9 +182,6 @@ document.addEventListener("keydown", (e) => {
         });
     });
 
-    /**
-     * Init swiper sliders
-     */
     function initSwiper() {
         document
             .querySelectorAll(".init-swiper")
@@ -240,7 +191,6 @@ document.addEventListener("keydown", (e) => {
                         .querySelector(".swiper-config")
                         .innerHTML.trim(),
                 );
-
                 if (swiperElement.classList.contains("swiper-tab")) {
                     initSwiperWithCustomPagination(swiperElement, config);
                 } else {
@@ -248,23 +198,22 @@ document.addEventListener("keydown", (e) => {
                 }
             });
     }
-
     window.addEventListener("load", initSwiper);
 })();
 
 /**
- * Slider Card — dijalankan setelah DOM siap
+ * Slider Card
  */
 document.addEventListener("DOMContentLoaded", function () {
     const slides = [
         {
             label: "Clean Water",
-            desc: "Pengelolaan air bersih untuk kebutuhan masyarakat Jakarta secara berkelanjutan dan merata.",
+            desc: "Sistem pengolahan air limbah modern untuk menjaga kebersihan lingkungan dan ekosistem kota.Sistem pengolahan air limbah modern untuk menjaga kebersihan lingkungan dan ekosistem kota.Sistem pengolahan air limbah modern untuk menjaga kebersihan lingkungan dan ekosistem kota.Sistem pengolahan air limbah modern untuk menjaga kebersihan lingkungan dan ekosistem kota.",
             img: "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=600&q=80",
         },
         {
             label: "Waste Water",
-            desc: "Sistem pengolahan air limbah modern untuk menjaga kebersihan lingkungan dan ekosistem kota.",
+            desc: "Sistem pengolahan air limbah modern untuk menjaga kebersihan lingkungan dan ekosistem kota.Sistem pengolahan air limbah modern untuk menjaga kebersihan lingkungan dan ekosistem kotaSistem pengolahan air limbah modern untuk menjaga kebersihan lingkungan dan ekosistem kota.",
             img: "https://images.unsplash.com/photo-1465447142348-e9952c393450?w=600&q=80",
         },
         {
@@ -286,8 +235,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const wrapper = document.getElementById("sliderWrapper");
     const dotsEl = document.getElementById("sliderDots");
-
-    // Pastikan elemen ada sebelum dijalankan
     if (!wrapper || !dotsEl) return;
 
     let current = 0;
@@ -299,6 +246,42 @@ document.addEventListener("DOMContentLoaded", function () {
         d.addEventListener("click", () => goTo(i));
         dotsEl.appendChild(d);
     });
+
+    // ✅ Fungsi set peek — dipanggil setelah card masuk DOM
+    function setPeek(card) {
+        const label = card.querySelector(".card-label");
+        const h3 = card.querySelector("h3");
+        const p = card.querySelector("p");
+
+        // Pastikan elemen sudah dirender untuk dapat offsetHeight
+        requestAnimationFrame(() => {
+            const peekHeight = h3.offsetHeight + 100; // tinggi judul + padding bawah
+
+            // State default: judul mengintip
+            label.style.transition = "none";
+            label.style.transform = `translateY(calc(100% - ${peekHeight}px))`;
+            p.style.opacity = "0";
+            p.style.transition = "none";
+
+            // Aktifkan transisi setelah posisi awal di-set
+            requestAnimationFrame(() => {
+                label.style.transition = "transform 0.4s ease";
+                p.style.transition = "opacity 0.3s ease";
+            });
+
+            // Hover masuk → full
+            card.addEventListener("mouseenter", () => {
+                label.style.transform = "translateY(0)";
+                p.style.opacity = "1";
+            });
+
+            // Hover keluar → kembali peek
+            card.addEventListener("mouseleave", () => {
+                label.style.transform = `translateY(calc(100% - ${peekHeight}px))`;
+                p.style.opacity = "0";
+            });
+        });
+    }
 
     function render() {
         wrapper.innerHTML = "";
@@ -321,16 +304,26 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             `;
 
-            if (pos === 0)
-                card.addEventListener("click", () =>
-                    goTo((current - 1 + slides.length) % slides.length),
-                );
-            if (pos === 2)
-                card.addEventListener("click", () =>
-                    goTo((current + 1) % slides.length),
-                );
-
             wrapper.appendChild(card);
+
+            // ✅ Hanya card aktif (tengah) yang punya hover peek
+            if (pos === 1) {
+                setPeek(card);
+            } else {
+                // Side card: sembunyikan label total
+                const label = card.querySelector(".card-label");
+                label.style.transform = "translateY(100%)";
+
+                // Klik untuk pindah slide
+                if (pos === 0)
+                    card.addEventListener("click", () =>
+                        goTo((current - 1 + slides.length) % slides.length),
+                    );
+                if (pos === 2)
+                    card.addEventListener("click", () =>
+                        goTo((current + 1) % slides.length),
+                    );
+            }
         });
 
         dotsEl.querySelectorAll(".dot").forEach((d, i) => {
@@ -355,7 +348,9 @@ document.addEventListener("DOMContentLoaded", function () {
     wrapper.addEventListener(
         "touchstart",
         (e) => (startX = e.touches[0].clientX),
-        { passive: true },
+        {
+            passive: true,
+        },
     );
     wrapper.addEventListener("touchend", (e) => {
         if (startX === null) return;
