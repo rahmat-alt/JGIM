@@ -207,7 +207,7 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>About Us</h2>
+                <h2>About Of</h2>
                 <p>Jakarta Geospatial Investment Model</p>
             </div><!-- End Section Title -->
             <div class="content-us" data-aos="fade-up">
