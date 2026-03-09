@@ -999,6 +999,18 @@ section,
         display: none; /* slider dimatikan di mobile agar rapi */
     }
 
+    .content p {
+        font-size: 12px;
+    }
+    .about-us p {
+        font-size: 12px;
+    }
+
+    .content h4 {
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
     .menu-container button.active {
         background: #ff8c00;
         border-radius: 10px;
