@@ -151,7 +151,7 @@
                     <img src="assets/img/img-jkt-about.jpg" alt="">
                     <div class="carousel-container text-center">
                         <h2>Welcome to Jakarta Geospatial Investment Model<br></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Welcome to the future of investment and integrated services, designed to support Jakarta's rise as a global city. Our digital twin platform empowers you with real-time insights, predictive modeling, and streamlined permitting solutions.</p>
 
                         <div class="text-center mt-2">
                             <a href="/maps-jgim"
@@ -168,7 +168,7 @@
                     <img src="assets/img/hero-carousel/image_jkt_2.jpg" alt="">
                     <div class="carousel-container text-center">
                         <h2>Welcome to Jakarta Geospatial Investment Model</h2>
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
+                        <p>Welcome to the future of investment and integrated services, designed to support Jakarta's rise as a global city. Our digital twin platform empowers you with real-time insights, predictive modeling, and streamlined permitting solutions.</p>
 
                         <div class="text-center mt-2">
                             <a href="/maps-jgim"
@@ -184,7 +184,7 @@
                     <img src="assets/img/hero-carousel/image_jkt_3.jpg" alt="">
                     <div class="carousel-container text-center">
                         <h2>Welcome to Jakarta Geospatial Investment Model</h2>
-                        <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
+                        <p>Welcome to the future of investment and integrated services, designed to support Jakarta's rise as a global city. Our digital twin platform empowers you with real-time insights, predictive modeling, and streamlined permitting solutions.</p>
 
                         <div class="text-center mt-2">
                             <a href="/maps-jgim"
@@ -206,15 +206,17 @@
         <section id="about us" class="about us section">
 
             <!-- Section Title -->
-            <div class="container section-title " data-aos="fade-up">
+            <div class="container section-title" data-aos="fade-up">
                 <h2>About Us</h2>
                 <p>Jakarta Geospatial Investment Model</p>
             </div><!-- End Section Title -->
             <div class="content-us" data-aos="fade-up">
                 <div class="container pt-3 pb-5">
                     <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-6">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugiat fuga molestias atque facilis accusamus Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, accusantium. Asperiores harum sequi fugiat officiis.</p>
+                        <div class="col-lg-6 col-md-6 mx-auto" style="text-align: justify; max-width:700px;" data-aos="fade-up">
+                            <p>
+                                This platform is an integrated solution designed to support investment, urban planning, and sustainable development in Jakarta as the city evolves into a modern global hub. By leveraging digital twin technology, it provides a dynamic digital representation of the city, allowing users to access real-time insights, conduct predictive analyses, and identify development opportunities across various sectors. Additionally, the platform streamlines permitting and investment services, making processes more transparent, efficient, and accessible for investors, businesses, and stakeholders. With this innovative digital ecosystem, the platform aims to empower decision-making, foster sustainable growth, and enhance Jakarta’s competitiveness on the global stage, positioning the city as a leading center for economic development, innovation, and urban planning excellence.
+                            </p>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <img src="assets/img/hero-carousel/image_jkt_1.jpg" alt="" class="img-fluid rounded">
@@ -234,27 +236,69 @@
             <p>Jakarta Geospatial Investment Model</p>
         </div><!-- End Section Title -->
 
-        <div class="container d-flex justify-content-center pt-4 pb-3">
-            <div class="menu-container" id="menu">
-                <div class="slider" id="slider"></div>
-                <button class="menu-item">Existing</button>
-                <button class="menu-item">Spatial Analysis</button>
-                <button class="menu-item">Development Plan</button>
-            </div>
-        </div>
 
-        <div class="container pb-4">
-
-            <div class="slider-section" data-aos="fade-up">
-                <div class="slider-wrapper" id="sliderWrapper">
-                    <!-- Cards dirender oleh JS -->
-                </div>
-                <div class="slider-dots" id="sliderDots"></div>
-            </div>
-        </div>
         </section><!-- /slider section -->
     </main>
 
+    <section class="py-5">
+        <div class="container">
+
+            <!-- Existing -->
+            <div class="row align-items-center mb-5" data-aos="fade-up">
+
+                <div class="col-lg-4">
+                    <img src="assets/img/feature/existing.jpeg"
+                        class="img-fluid rounded-4 shadow"
+                        style="max-width:260px;">
+                </div>
+
+                <div class="col-lg-8">
+                    <h4 class="fw-bold">Existing</h4>
+                    <p class="text-muted text-justify">
+                        users can access a detailed three-dimensional schematic representation of Jakarta’s current buildings, transportation networks, and infrastructure systems. This feature allows users to observe the city’s present architectural and spatial conditions with greater clarity, providing an accurate context for understanding how different districts are structured and how urban activities are distributed throughout the metropolitan area. Through this visualization, stakeholders can better evaluate the existing urban form, identify patterns of development, and gain valuable insights into how Jakarta’s infrastructure supports economic and social activities across the city.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Spatial Analysis -->
+            <div class="row align-items-center mb-5" data-aos="fade-up">
+
+                <div class="col-lg-8 order-lg-1 order-2">
+                    <h4 class="fw-bold">Spatial Analysis</h4>
+                    <p class="text-muted text-justify">
+                        further enhances the platform by enabling access to a wide range of spatial data analyses. Through this feature, users can examine critical urban indicators such as population density, land utilization patterns, zoning characteristics, accessibility to transportation networks, and the distribution of public infrastructure. These analytical capabilities provide deeper insights into the spatial dynamics of Jakarta’s districts, allowing users to identify areas with high development potential, infrastructure gaps, or strategic investment opportunities. By integrating spatial datasets with analytical tools, this mode supports evidence-based decision-making and helps stakeholders evaluate the feasibility and sustainability of potential development projects within specific locations.
+                    </p>
+                </div>
+
+                <div class="col-lg-4 text-lg-end order-lg-2 order-1">
+                    <img src="assets/img/feature/spatial analysis.jpg"
+                        class="img-fluid rounded-4 shadow"
+                        style="max-width:260px;">
+                </div>
+
+            </div>
+
+            <!-- Development Plan -->
+            <div class="row align-items-center mb-5" data-aos="fade-up">
+
+                <div class="col-lg-4">
+                    <img src="assets/img/feature/development plan.jpg"
+                        class="img-fluid rounded-4 shadow"
+                        style="max-width:260px;">
+                </div>
+
+                <div class="col-lg-8">
+                    <h4 class="fw-bold">Development Plan</h4>
+                    <p class="text-muted text-justify">
+                        presents a forward-looking schematic model that integrates proposed development initiatives, future infrastructure projects, and long-term urban planning strategies envisioned for Jakarta. This feature allows users to explore how the city is expected to evolve over time, highlighting areas targeted for redevelopment, infrastructure expansion, and new investment opportunities. By visualizing these future plans within the broader spatial framework of the city, users can better understand how upcoming projects may influence urban growth, economic activity, and regional connectivity. This forward-looking perspective is particularly valuable for investors and policymakers seeking to align their strategies with Jakarta’s broader vision for sustainable development, economic competitiveness, and modern urban transformation.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
     <footer id="footer" class="footer dark-background" data-aos="fade-up">
 
