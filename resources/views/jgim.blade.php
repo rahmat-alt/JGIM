@@ -44,9 +44,9 @@
 
             <!-- Logo Section -->
             <div class="logo d-inline-flex align-items-center p-2 bg-white shadow-sm gap-2 rounded-pill">
-                <img src="{{ asset('assets/images/logo_dpmptsp.png') }}" class="logo-img img-fluid" alt="logo_dpmptsp">
-                <img src="{{ asset('assets/images/logo_jic.png') }}" class="logo-img img-fluid" alt="logo_jic">
-                <img src="{{ asset('assets/images/logo_jakbizhub.png') }}" class="logo-img img-fluid" alt="logo_jakbizhub">
+                <img src="{{ asset('assets/img/logo-navbar/logo_dpmptsp.png') }}" class="logo-img img-fluid" alt="logo_dpmptsp" style="max-width: 20px;">
+                <img src="{{ asset('assets/img/logo-navbar/logo_jic.png') }}" class="logo-img img-fluid" alt="logo_jic" style="max-width: 20px;">
+                <img src="{{ asset('assets/img/logo-navbar/logo_jakbizhub.png') }}" class="logo-img img-fluid" alt="logo_jakbizhub" style="max-width: 20px;">
             </div>
 
             <!-- Mobile Toggle Button -->
