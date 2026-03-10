@@ -215,7 +215,9 @@
                     <div class="row align-items-center">
                         <div class=" about-us col-lg-6 col-md-6 mx-auto" style="text-align: justify; max-width:700px;" data-aos="fade-up">
                             <p>
-                                This platform is an integrated solution designed to support investment, urban planning, and sustainable development in Jakarta as the city evolves into a modern global hub. By leveraging digital twin technology, it provides a dynamic digital representation of the city, allowing users to access real-time insights, conduct predictive analyses, and identify development opportunities across various sectors. Additionally, the platform streamlines permitting and investment services, making processes more transparent, efficient, and accessible for investors, businesses, and stakeholders. With this innovative digital ecosystem, the platform aims to empower decision-making, foster sustainable growth, and enhance Jakarta’s competitiveness on the global stage, positioning the city as a leading center for economic development, innovation, and urban planning excellence.
+                                This platform is an integrated solution designed to support investment, urban planning, and sustainable development in Jakarta as the city evolves into a modern global hub. By leveraging digital twin technology, it provides a dynamic digital representation of the city, allowing users to access real-time insights, conduct predictive analyses, and identify development opportunities across various sectors.
+
+                                In addition, the platform streamlines permitting and investment services, making processes more transparent, efficient, and accessible for investors, businesses, and related parties.
                             </p>
                         </div>
                         <div class="col-lg-6 col-md-6">
@@ -255,7 +257,8 @@
                 <div class="col-lg-8">
                     <h4 class="fw-bold">Existing</h4>
                     <p style="text-align: justify;">
-                        users can access a detailed three-dimensional schematic representation of Jakarta’s current buildings, transportation networks, and infrastructure systems. This feature allows users to observe the city’s present architectural and spatial conditions with greater clarity, providing an accurate context for understanding how different districts are structured and how urban activities are distributed throughout the metropolitan area. Through this visualization, stakeholders can better evaluate the existing urban form, identify patterns of development, and gain valuable insights into how Jakarta’s infrastructure supports economic and social activities across the city.
+                        Users can access a detailed three-dimensional schematic representation of Jakarta’s current buildings and infrastructure systems. This feature allows users to observe the city’s present architectural and spatial conditions with greater clarity, providing an accurate context for understanding how different districts are structured and how urban activities are distributed throughout the metropolitan area.
+                        Through this visualization, users can better evaluate the existing urban form, identify patterns of development, and gain insights into how Jakarta’s infrastructure supports economic and social activities across the city.
                     </p>
                 </div>
 
@@ -267,7 +270,9 @@
                 <div class="col-lg-8 order-lg-1 order-2">
                     <h4 class="fw-bold">Spatial Analysis</h4>
                     <p style="text-align: justify;">
-                        further enhances the platform by enabling access to a wide range of spatial data analyses. Through this feature, users can examine critical urban indicators such as population density, land utilization patterns, zoning characteristics, accessibility to transportation networks, and the distribution of public infrastructure. These analytical capabilities provide deeper insights into the spatial dynamics of Jakarta’s districts, allowing users to identify areas with high development potential, infrastructure gaps, or strategic investment opportunities. By integrating spatial datasets with analytical tools, this mode supports evidence-based decision-making and helps stakeholders evaluate the feasibility and sustainability of potential development projects within specific locations.
+                        This mode further enhances the platform by enabling access to a wide range of spatial data analyses. Through this feature, users can examine important urban indicators such as land utilization patterns, zoning characteristics, and the distribution of public infrastructure.
+                        These analytical capabilities provide deeper insights into the spatial dynamics of Jakarta’s districts, allowing users to identify areas with high development potential, infrastructure gaps, or strategic investment opportunities.
+                        By integrating spatial datasets with analytical tools, this mode supports evidence-based decision-making and helps stakeholders evaluate the feasibility and sustainability of potential development projects within specific locations.
                     </p>
                 </div>
 
