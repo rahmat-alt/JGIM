@@ -231,8 +231,6 @@
 
         <!-- slider  section -->
         <div class="container section-title" data-aos="fade-up">
-
-
             <h2>Feature Of</h2>
             <p>Jakarta Geospatial Investment Model</p>
         </div><!-- End Section Title -->
