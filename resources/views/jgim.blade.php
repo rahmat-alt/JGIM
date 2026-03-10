@@ -216,7 +216,6 @@
                         <div class=" about-us col-lg-6 col-md-6 mx-auto" style="text-align: justify; max-width:700px;" data-aos="fade-up">
                             <p>
                                 This platform is an integrated solution designed to support investment, urban planning, and sustainable development in Jakarta as the city evolves into a modern global hub. By leveraging digital twin technology, it provides a dynamic digital representation of the city, allowing users to access real-time insights, conduct predictive analyses, and identify development opportunities across various sectors.
-
                                 In addition, the platform streamlines permitting and investment services, making processes more transparent, efficient, and accessible for investors, businesses, and related parties.
                             </p>
                         </div>
