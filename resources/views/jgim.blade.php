@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-    </script>
-
-    <!-- PARTIAL LINK BOOSTRAP -->
-    @include('link-partial')
-
-</head>
+@include('link-partial')
 
 <body class="index-page">
 
@@ -362,5 +348,3 @@
 
 
 </body>
-
-</html>
